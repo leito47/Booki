@@ -101,9 +101,10 @@ section p{
   border-radius: 25px
   
 }
-#filtre  p:hover{
-  background: #DEEBFF;
-  
-  
+#filtre p:hover{
+  background: #DEEBFF; 
+}
 
+p i{
+  color: #0065FC;
 }
