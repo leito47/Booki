@@ -1,64 +1,77 @@
 html body main {
   font-family: "Raleway",sans-serif;
   max-width: 1400px;
-  margin: 0px auto;
+  margin: 10px auto;
 }
-nav{
+
+/*Nav-Bar*/
+
+nav{ 
+  margin-left: 55px;
   display: flex;
   justify-content: space-between;
   align-items: center; 
 }
+
 nav img{
   margin-top: 44px;
-  margin-left: 55px;
   height: 29px;
   width: 61px;
 }
+
 nav ul{
-  width: 381px;
-  height: 19px;
   text-align: center;
   display: flex; 
   list-style: none;
   margin-top: 48px;  
+  margin-right: 77px;
 }
+
 nav ul li a{
   font-size: 16px;
   font-weight: 400px;
   text-decoration: none;
   color: black;
-  padding-right: 67px;
+  padding-right: 67px; 
 }
-nav ul :hover{
-  font-weight: 500;
+
+nav li a:hover{
+  padding-top: 48px;
   border-top: 2px solid;
   color: #0065FC;
 }
-h1{
+
+.h-titre{
+  margin-top: 63px;
   margin-left: 55px;
-  font-weight: 700;
   font-size: 22px;
 }
+
 .p-titre{
-  margin-left: 55px;
-  font-weight: 400;
-  font-size: 16px;
+  margin-left: 55px 
 }
+
+/*Form Rechercher*/
+
 form{
   display: in;
   align-items: center;
   display: flex;
   margin-left: 55px;
+  margin-top: 20px;
 }
+
 form i{ 
   border: 1px solid #F2F2F2;
   border-radius: 15px 0px 0px 15px;
   background: #691515;
 }
+
 form p{
   display: flex;
   align-items: center;
 }
+
 form input{
   width: 250px;
   height: 46px;
@@ -66,8 +79,9 @@ form input{
   font-weight: 700px;
   border: none;
 }
+
 form button{
-  width: 132px;
+  width :10%;
   height: 49px;
   font-size: 18px;
   border-radius: 0px 20px 20px 0px;
@@ -75,22 +89,33 @@ form button{
   border: 1px solid #0065FC;
   color: #FFFFFF;
 }
+
 .fa-solid{
  padding: 17px;
-
 }
 form :hover{
   border: 1px solid #0065FC;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-#filtre{
+
+/*Section Filtre*/
+
+#filtre{ 
   display: flex;
   align-items: center;
   margin-left: 49px;
   margin-top: 23px;
 }
 
-section p{
+#filtre h3{
+  margin-top: 14px;
+}
+
+filtre .fa-solid{
+  height: 100px;
+}
+
+#filtre p{
   display:flex ;
   align-items: center;  
   width: 140px;
@@ -98,13 +123,70 @@ section p{
   padding-right: 10px;
   margin-left: 32px;
   border: 1px solid;
-  border-radius: 25px
-  
+  border-radius: 25px;
 }
+
 #filtre p:hover{
   background: #DEEBFF; 
 }
 
-p i{
-  color: #0065FC;
+/*info*/
+
+.info{ 
+  display: inline-block;
+  align-items: center;
+  margin-left: 59px;
+  font-size: 16px
 }
+
+.info i{
+  width: 5px;
+  height: 5px;
+  color: #0065FC;
+  border: 1px solid #D9D9D9;
+  border-radius: 25px; 
+  padding-right: 15px;
+  padding-top: 5px;
+  margin-right: 10px; 
+}
+
+/*Section Hebergement*/
+ .hebergements{
+display: flex;
+justify-content: space-between;
+ }
+
+ #hebergement{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  padding: 0 40px 40px 40px;
+  background-color: #5a5b5e;
+ }
+
+ .carteContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+ }
+
+ .cardHerbergement{
+  width: 280px;
+  height: 320px;
+  margin-bottom: 25px;
+  background-color: #0065FC;
+  border-radius: 20px ;
+ }
+
+ img{
+  object-fit: cover;
+ }
+ 
+ #population{
+  width :25%;
+  display: flex;
+  background-color: #691515;
+ }
+ 
+ 
