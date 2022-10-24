@@ -67,7 +67,7 @@ form input {
   height: 46px;
   font-size: 18px;
   font-weight: 700px;
-  border: none;
+  border : none;
 }
 
 form button {
@@ -84,7 +84,7 @@ form button {
   padding: 17px;
 }
 
-form :hover {
+form button  :hover {
   border: 1px solid #0065FC;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -159,17 +159,54 @@ form :hover {
 }
 
 .cardHerbergement {
-  width: 280px;
-  height: 320px;
+  width: 293px;
+  height: 221px;
   margin-bottom: 25px;
   background-color: #0065FC;
   border-radius: 20px;
+  text-decoration: none
 }
 
-img {
+#hebergement figure{
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin: 0;
+}
+
+.imgMarseille {
+  width: 97%;
+  height: 124px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-left: 3px;
+  margin-top: 4px;
+  border: 2px solid #D9D9D9;
   object-fit: cover;
 }
- .afficher{
+figure  h3 {
+  margin: 4px 0 0 15px;
+ 
+  color: #000000;
+
+}
+figure figcaption{
+  height: 87px;
+ 
+}
+figure  p{
+  margin: 9px 0 0 15px;
+  
+  color: #000000;
+}
+figure figcaption i{
+  
+  margin: 0 auto;
+  padding: 0 auto;
+  color: #0065FC;
+  
+}
+
+.afficher{
   font-size: 18px;
   font-weight: bold;
   color: #000000;
@@ -182,7 +219,7 @@ img {
   width: 25%;
   display: flex;
   flex-direction: column;
-
+  padding-left: 20px;
   background-color: #691515;
 
 }
@@ -207,18 +244,13 @@ img {
   display: flex;
   flex-direction: column;
   background-color: #46cc94;
-  width: 100%;
-  height: 493px;
+  margin-top: 40px;
   
 }
 .containerActivite{
   display: flex;
-  
- 
-  
-  background-color: #5a5b5e;
 }
-.cardActivite{
+#activite .cardActivite{
   width: 100%;
   height: 444px;
   margin-left: 20px;
@@ -227,4 +259,8 @@ img {
   background-color: #691515;
   margin-bottom: 25px;
   
+}
+#footer {
+  display:flex;
+  background-color: #8f9c16;
 }
