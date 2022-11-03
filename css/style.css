@@ -1,15 +1,10 @@
-html{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
  body {
   font-family: "Raleway", sans-serif;
   max-width: 1400px;
-  margin: 0;
+  margin: auto;
   background: #FFFFFF;
+  
 }
 .fa-star[data-active="true"]{
   color: #0065FC;
@@ -19,7 +14,9 @@ html{
   color: #d9d9d9;
 }
 
-/*Nav-Bar*/
+/***********
+ * Nav_Bar *
+ ***********/
 
 nav {
   display: flex;
@@ -28,7 +25,7 @@ nav {
 }
 
 nav img {
-  width: 100px;
+ height: 19px;
 }
 
 nav ul {
@@ -61,7 +58,9 @@ nav li a:hover {
   font-weight: 400; 
 }
 
-/*Form Rechercher*/
+/******************
+ * Form Rechercher *
+ ******************/
 
 form {
   display: flex;
@@ -78,7 +77,6 @@ form input {
   font-weight: 700;
   padding: 8px 0 7px 10px;
   border: 2px solid #FFFFFF
-  
 }
 
 form button {
@@ -103,12 +101,14 @@ form button {
   display: none;
 }
 
-/*Section Filtre*/
+/******************
+ * Section Filtre *
+ ******************/
 
 #filtre {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 2%;
 }
 
 #filtre h3 {
@@ -119,7 +119,7 @@ form button {
 #filtre p {
   display: flex;
   align-items: center;
-  padding: 10px 15px 10px 15px;
+  padding: 10px ;
   border: 2px solid #D9D9D9;
   border-radius: 25px;
   font-size: 17px;
@@ -135,7 +135,9 @@ form button {
   background: #DEEBFF;
 }
 
-/*info*/
+/********
+ * Info *
+ ********/
 
 .pInfo {
   display: flex;
@@ -146,16 +148,16 @@ form button {
 }
 
 .pInfo i {
-
+  padding: 5px 10px;
   text-align: center;
   border: 1px solid #D9D9D9;
   border-radius: 15px 15px;
-  padding: 5px 10px;
   color: #0065FC;
 }
 
-
-/*Section Hebergement*/
+/***********************
+ * Section Hebergement *
+ ***********************/
 
 .hebergements {
   display: flex;
@@ -174,11 +176,11 @@ form button {
 }
 
 #hebergement h2{
+  margin-top: 10px;
+  margin-bottom: 25px;
   font-size: 22px;
   font-weight: 700;
-  margin-top: 10px;
   color: #000000;
-  margin-bottom: 25px;
 }
 
 #hebergement h3{
@@ -190,9 +192,9 @@ form button {
 }
 
 #hebergement p{
+  margin: 7px 0;
   font-size: 14px;
   font-weight: 400;
-  margin: 7px 0;
   color: #000000;
 }
 
@@ -209,37 +211,32 @@ form button {
   width: 100%;
   height: 60%;
   border-radius: 20px 20px 0px 0px;
-  
 }
 
 .containerHebergement{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
- 
 }
 
 .cardHebergement{
   width: 30%;
-  
   margin-bottom: 25px;
   text-decoration: none;
   background-color: #FFFFFF;
-  border-radius: 25px;
-  
+  border-radius: 25px; 
 }
 
 #hebergement .etoile{
   text-decoration: none;
   font-size: 18px;
-  font-weight: 700;
-  
+  font-weight: 700; 
 }
-
 
 #hebergement figcaption{
   margin-left: 15px;
 }
+
 .aAfficher{
   margin: 10Px 0 25px 0;
   text-decoration: none;
@@ -248,7 +245,10 @@ form button {
   color: #000000;
 }
 
-/*Section Populaire*/
+/*********************
+ * Section Populaire *
+ *********************/
+
 #populaire{
   width: 48vw;
   display: flex;
@@ -266,8 +266,9 @@ form button {
   color: #000000;
   margin-bottom: 25px;
 }
-
-
+#populaire .fa-chart-line{
+  color: #0065FC;
+}
 
 .containerPopulaire{
   display: flex;
@@ -279,7 +280,6 @@ form button {
   display: flex;
   flex-direction: row;  
   height: 17vh;
-  
   text-decoration: none;
   border-radius: 20px;
   background: #FFFFFF;
@@ -323,13 +323,13 @@ form button {
 #populaire p{
   font-size: 14px;
   font-weight: 400;
-  
   color: #000000;
 }
 
+/********************
+ * Section Activite *
+ ********************/
 
-
-/*Section Activite*/
 #activite{
   width: 100%;
   display: flex;
@@ -354,8 +354,7 @@ form button {
   margin: 0; 
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-#activite h3{
-  
+#activite h3{ 
   font-size: 16px;
   font-weight: 700;  
   color: #000000;
@@ -370,8 +369,9 @@ form button {
   padding: 7px 15px;
 }
 
-/*Section Footer*/
-
+/**********
+ * Footer *
+ **********/
 footer{
   width: 100%;
   display: flex;
@@ -418,8 +418,92 @@ footer H3{
   list-style: none;
   padding: 0;
 }
+#footer li{
+  display: flex;
+}
 .footerA{
   margin: 5px 0;
 
 }
+
+/***************
+ * Media Query *
+ ***************/
+
+ @media (max-width: 992px) {
+  body{
+    padding-left: 30px ;
+    padding-right: 25px;
+  }
+
+  .hebergements {
+    flex-direction: column;
+ }
+
+ #hebergement{
+  width: 91vw;
+ }
+
+ #populaire{
+  width: 91vw;
+ }
+
+  .containerPopulaire{
+  flex-direction: row;
+ }
+
+ #populaire figcaption{
+  flex-direction: column;
+ }
+ .leftFooter{
+  width: 20vw;
+ }
+ .centerFooter{
+  width: 19vw;
+ }
+ .rightFooter{
+  width: 24vw;
+ }
+ }
+
+ @media (max-width: 768px) {
+  nav{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+
+  }
+  nav ul{
+    width: 72vw;
+    justify-content: space-between;
+  }
+  .hebergements{
+    flex-direction: column-reverse;
+  }
+  #populaire .containerPopulaire{
+    width: 80vw;
+    flex-direction: column;
+  }
+  #hebergement .containerHebergement{
+    width: 270vw;
+    flex-direction: column;
+  }
+  #activite .containerActivite{
+    flex-direction: column;
+  }
+  #activite .imgActivite {
+    width: 87vw;
+    height: 47vh;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+ 
+  }
+  
+  
+
+
+
 
