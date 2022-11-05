@@ -1,3 +1,9 @@
+html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0065FC;
+}
 body {
   font-family: "Raleway", sans-serif;
   max-width: 1400px;
@@ -117,11 +123,11 @@ form button {
   display: none;
 }
 
-/******************
+/* *****************
  * Section Filtre *
  ******************/
 
-#filtre {
+/* #filtre {
   display: flex;
   align-items: center;
   gap: 2%;
@@ -149,7 +155,7 @@ form button {
 
 #filtre p:hover {
   background: #DEEBFF;
-}
+} */
 
 /********
  * Info *
@@ -183,7 +189,7 @@ form button {
 }
 
 #hebergement {
-  width: 73vw;
+  width: 70%;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -267,7 +273,7 @@ form button {
  *********************/
 
 #populaire {
-  width: 30vw;
+  width: 23%;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -384,7 +390,7 @@ form button {
 
 .imgActivite {
   width: 100%;
-  height: 47vh;
+  height: 444px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
@@ -425,19 +431,19 @@ footer H3 {
 .leftFooter {
   display: flex;
   flex-direction: column;
-  width: 15vw;
+  width: 25%;
 }
 
 .centerFooter {
   display: flex;
   flex-direction: column;
-  width: 18vw;
+  width: 25%;
 }
 
 .rightFooter {
   display: flex;
   flex-direction: column;
-  width: 22vw;
+  width: 25%;
 }
 
 #footer ul {
@@ -469,35 +475,42 @@ footer H3 {
   }
 
   #hebergement {
-    width: 91vw;
+    width: 95%;
   }
 
   #populaire {
-    width: 91vw;
+    width: 95%;
   }
 
   .containerPopulaire {
     flex-direction: row;
+  }
+  .cardPopulaire{
+    width: 30%;
   }
 
   #populaire figcaption {
     flex-direction: column;
   }
 
+  .imgActivite{
+    height: 267px;
+  }
+
   .leftFooter {
-    width: 20vw;
+    width: 21%;
   }
 
   .centerFooter {
-    width: 19vw;
+    width: 23%;
   }
 
   .rightFooter {
-    width: 24vw;
+    width: 31%;
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   nav {
     flex-direction: column;
     align-items: center;
@@ -508,6 +521,11 @@ footer H3 {
   nav ul {
     width: 72vw;
     justify-content: space-between;
+  }
+  nav li a:hover {
+    padding-bottom: 30px;
+    border-top: 2px solid;
+    color: #0065FC;
   }
 
   .hebergements {
@@ -537,4 +555,4 @@ footer H3 {
     flex-direction: column;
   }
 
-}
+} */
