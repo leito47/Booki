@@ -541,7 +541,7 @@ footer H3 {
     justify-content: space-around;
     gap: initial;
     padding: 0;
-    
+
   }
 
   nav li {
@@ -559,11 +559,11 @@ footer H3 {
     border-top: none;
   }
 
-  span{
+  span {
     display: none;
   }
 
-  .fa-magnifying-glass{
+  .fa-magnifying-glass {
     display: block;
     color: #D9D9D9;
   }
@@ -601,7 +601,7 @@ footer H3 {
   }
 
   .imgMarseille {
-    height: 70%;  
+    height: 70%;
   }
 
   #populaire {
