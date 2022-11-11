@@ -12,6 +12,7 @@ body {
   margin: auto;
   background: #FFFFFF;
   padding: 20px;
+  margin: 0 ;
 }
 
 .fa-star[data-active="true"] {
@@ -118,7 +119,7 @@ form button {
   color: #000000;
   padding: 10px 13px;
   border-radius: 15px 0px 0px 15px;
-  border: 2px solid #F2F2F2;
+  border: 7px solid #F2F2F2;
   background-color: #F2F2F2;
 }
 
@@ -148,7 +149,7 @@ form button {
   display: flex;
   align-items: center;
   margin-left: 35px;
-  padding: 15px;
+  padding: 10px 20px 10px 15px;
   border: 2px solid #D9D9D9;
   border-radius: 25px;
   font-size: 17px;
@@ -196,10 +197,11 @@ form button {
 }
 
 #hebergement {
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  
+  padding: 40px;
   background: #F2F2F2;
   border-radius: 20px;
 }
@@ -280,10 +282,10 @@ form button {
  *********************/
 
 #populaire {
-  width: 26%;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 40px;
   background: #F2F2F2;
   border-radius: 20px;
 }
@@ -361,10 +363,10 @@ form button {
  ********************/
 
 #activite {
-  width: 97%;
+  width:100%;
   display: flex;
   flex-direction: column;
-  padding: 20px
+  
 }
 
 #activite h2 {
@@ -470,21 +472,18 @@ footer H3 {
  ***************/
 
 @media screen and (max-width: 992px) {
-  body {
-    padding-left: 30px;
-    padding-right: 25px;
-  }
+  
 
   .hebergements {
     flex-direction: column;
   }
 
   #hebergement {
-    width: 95%;
+    width: 91%;
   }
 
   #populaire {
-    width: 95%;
+    width: 91%;
   }
 
   .containerPopulaire {
@@ -504,7 +503,7 @@ footer H3 {
   }
 
   footer {
-    width: 85%;
+    width: 80%;
     padding-left: 42px;
   }
 
@@ -559,6 +558,10 @@ footer H3 {
     border-top: none;
   }
 
+  form{
+    justify-content: center;
+  }
+
   span {
     display: none;
   }
@@ -575,16 +578,21 @@ footer H3 {
 
   .pFiltre {
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .filtreP {
-    width: 240px;
+    width:35%;
     margin-left: 0;
+    font-size: 11px;
   }
 
   .hebergements {
     flex-direction: column-reverse;
+  }
+  
+  #hebergement{
+   
   }
 
   .cardHebergement {
@@ -606,6 +614,8 @@ footer H3 {
 
   #populaire {
     width: 97%;
+    padding: 0;
+   
   }
 
   #populaire .containerPopulaire {
@@ -618,7 +628,7 @@ footer H3 {
 
   #activite {
     width: 100%;
-    padding: 20px 0 20px 20px;
+    padding: 0;
   }
 
   .cardActivite {
@@ -632,6 +642,7 @@ footer H3 {
 
   footer {
     flex-direction: column;
+    padding: 0;
   }
 
   .leftFooter {
