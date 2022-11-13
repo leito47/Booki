@@ -1,10 +1,10 @@
-html {
+/* html {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #FFFFFF;
-}
+} */
 
 body {
   font-family: "Raleway", sans-serif;
@@ -36,9 +36,11 @@ body {
  ***********/
 
 nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  align-items: center;
+  
 }
 
 nav img {
@@ -46,21 +48,24 @@ nav img {
 }
 
 nav ul {
-  text-align: center;
+  
   display: flex;
+  
+  text-align: center;
   list-style: none;
-  gap: 67px;
+  
 }
 
 nav ul li a {
+  padding: 30px;
   font-size: 16px;
   text-decoration: none;
   font-weight: 500;
   color: black;
 }
 
-nav li a:hover {
-  padding-top: 30px;
+nav ul li :hover {
+  
   border-top: 2px solid;
   color: #0065FC;
 }
@@ -94,7 +99,7 @@ form input {
   font-size: 18px;
   font-weight: 700;
   padding: 8px 0 7px 10px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #F2F2F2;
   color: #000000;
 }
 
@@ -110,7 +115,7 @@ form button {
   border-radius: 0px 20px 20px 0px;
   padding: 14px 16px 14px 16px;
   background-color: #0065FC;
-  border: 2px solid #0065FC;
+  border: 1px solid #0065FC;
   color: #FFFFFF;
 }
 
@@ -399,7 +404,7 @@ form button {
 
 .imgActivite {
   width: 100%;
-  height: 444px;
+  height: 394px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
@@ -472,9 +477,9 @@ footer H3 {
  * Media Query *
  ***************/
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) 
+{
   
-
   .hebergements {
     flex-direction: column;
   }
@@ -529,8 +534,9 @@ footer H3 {
   }
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 768px) 
+{
+  
 
   nav {
     width: 100%;
@@ -549,21 +555,28 @@ footer H3 {
     justify-content: space-around;
     gap: initial;
     padding: 0;
-
+    
   }
 
   nav li {
     width: 100%;
+    padding: 30px;
   }
 
   nav ul li:hover {
-    padding-bottom: 30px;
+    width: 100%;
+    border-top: none;
     border-bottom: 2px solid;
     color: #0065FC;
   }
-
-  nav li a:hover {
+  nav ul li a{
     padding: 0;
+    border-top: none;
+    
+  }
+
+  nav li a {
+    
     border-top: none;
   }
 
@@ -591,7 +604,7 @@ footer H3 {
   }
 
   .filtreP {
-    width:35%;
+    width:37%;
     margin-left: 0;
     font-size: 11px;
   }
@@ -612,7 +625,7 @@ footer H3 {
   }
 
   #hebergement figure {
-    height: 100%;
+    height: 75%;
   }
 
   #hebergement .containerHebergement {
@@ -631,6 +644,7 @@ footer H3 {
 
   #populaire .containerPopulaire {
     flex-direction: column;
+    gap: 20px;
   }
 
   .cardPopulaire {
@@ -652,7 +666,7 @@ footer H3 {
   }
 
   .imgActivite{
-    height: 190px;
+    height: 150px;
   }
 
   footer {
