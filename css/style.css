@@ -11,8 +11,7 @@ body {
   max-width: 1400px;
   margin: auto;
   background: #FFFFFF;
-  padding: 20px;
-  
+  padding: 20px 20px 0 20px;
 }
 
 .fa-star[data-active="true"] {
@@ -40,7 +39,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 nav img {
@@ -48,12 +46,9 @@ nav img {
 }
 
 nav ul {
-  
-  display: flex;
-  
+  display: flex; 
   text-align: center;
-  list-style: none;
-  
+  list-style: none; 
 }
 
 nav ul li a {
@@ -65,7 +60,6 @@ nav ul li a {
 }
 
 nav ul li :hover {
-  
   border-top: 2px solid;
   color: #0065FC;
 }
@@ -154,7 +148,6 @@ form button {
 .filtreP {
   display: flex;
   align-items: center;
-  margin-right: 20px;
   padding: 10px;
   border: 2px solid #D9D9D9;
   border-radius: 25px;
@@ -164,6 +157,7 @@ form button {
 
 #filtre i {
   padding-right: 10px;
+  font-size: 22px;
   color: #0065FC;
 }
 
@@ -206,7 +200,6 @@ form button {
   width: 70%;
   display: flex;
   flex-direction: column;
-  
   padding: 40px;
   background: #F2F2F2;
   border-radius: 20px;
@@ -241,7 +234,6 @@ form button {
   padding: 7px;
   background: #FFFFFF;
   border-radius: 20px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .imgMarseille {
@@ -263,6 +255,7 @@ form button {
   text-decoration: none;
   background-color: #FFFFFF;
   border-radius: 25px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 #hebergement .etoile {
@@ -307,6 +300,7 @@ form button {
 
 #populaire .fa-chart-line {
   color: #0065FC;
+  font-size: 18px;
 }
 
 .containerPopulaire {
@@ -321,6 +315,7 @@ form button {
   text-decoration: none;
   border-radius: 20px;
   background: #FFFFFF;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 #populaire figure {
@@ -331,7 +326,6 @@ form button {
   padding: 5px;
   background: #FFFFFF;
   border-radius: 20px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .imgPopulaire {
@@ -372,7 +366,6 @@ form button {
   width:100%;
   display: flex;
   flex-direction: column;
-  
 }
 
 #activite h2 {
@@ -389,11 +382,11 @@ form button {
   border-radius: 20px;
   background-color: #FFFFFF;
   text-decoration: none;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 #activite .figActivite {
   margin: 0;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 #activite h3 {
@@ -416,6 +409,7 @@ form button {
 /**********
  * Footer *
  **********/
+
 footer {
   width: 100%;
   display: flex;
@@ -536,9 +530,9 @@ footer H3 {
 
 @media screen and (max-width: 768px) 
 {
+
   body{
     padding: 30px 0 0 0 ;
-    
   }
   
   nav {
@@ -552,46 +546,36 @@ footer H3 {
     margin-bottom: 35px;
   }
 
-
   nav ul {
     width: 100%;
     justify-content: space-around;
     gap: initial;
     padding: 0;
-    
   }
 
   nav li {
     width: 100%;
     padding: 30px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid transparent;
   }
 
   nav ul li:hover {
     width: 100%;
     border-top: none;
     border-bottom: 2px solid #0065FC;
-   
   }
-  nav ul li a:hover{
-    
-    border-top: none;
-    
+
+  nav ul li a:hover{ 
+    border-top: none; 
   }
 
   nav li:hover{
-    
     border-top: none;
   }
-  .hTitre{
-    margin-left: 25px;
-    padding-right: 60px;
+  
+  .titrePrincipale{
+    padding: 0 60px 0 20px;
   }
-  .pTitre{
-    margin-left: 25px;
-  }
-
-
 
   form{
     justify-content: center;
@@ -610,7 +594,7 @@ footer H3 {
     flex-direction: column;
     align-items: initial;
     gap: 0;
-    margin-left: 20px;
+    padding-left: 20px;
   }
 
   .pFiltre {
@@ -620,7 +604,6 @@ footer H3 {
 
   .filtreP {
     width:37%;
-    margin-left: 0;
     font-size: 11px;
   }
   .pInfo{
@@ -639,7 +622,7 @@ footer H3 {
    
   }
   #hebergement h2{
-    margin-left: 20px;
+    padding-left: 20px;
   }
 
   .cardHebergement {
@@ -660,17 +643,22 @@ footer H3 {
     height: 66%;
   }
 
+  .aAfficher{
+    display: none;
+  }
+
   #populaire {
     width: 100%;
     padding: 0 0 40px 0;
     border-radius: initial;
-   
   }
+
   #populaire h2{
-    margin-left: 20px;
+    padding-left: 20px;
   }
+
   .fa-chart-line{
-    margin-right: 20px;
+    padding-right: 20px;
   }
 
   #populaire .containerPopulaire {
@@ -688,13 +676,18 @@ footer H3 {
     padding: 0;
   }
 
+  #activite h2{
+    padding-left: 20px;
+  }
+
   .cardActivite {
-    width: 100%;
+    width: 95%;
     margin-bottom: 25px;
   }
 
   #activite .containerActivite {
     flex-direction: column;
+    align-items: center;
   }
 
   .imgActivite{
@@ -702,9 +695,9 @@ footer H3 {
   }
 
   footer {
-    width: 100%;
+    width: 95%;
     flex-direction: column;
-    padding: 0;
+    padding-left: 20px;
   }
 
   .leftFooter {
