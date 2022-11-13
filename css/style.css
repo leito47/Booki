@@ -1,10 +1,10 @@
-/* html {
+html {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #FFFFFF;
-} */
+}
 
 body {
   font-family: "Raleway", sans-serif;
@@ -517,27 +517,30 @@ footer H3 {
   }
 
   footer {
-    width: 80%;
+    width: 96%;
     padding-left: 42px;
   }
 
   .leftFooter {
-    width: 29%;
+    width: 34%;
   }
 
   .centerFooter {
-    width: 23%;
+    width: 25%;
   }
 
   .rightFooter {
-    width: 20%;
+    width: 35%;
   }
 }
 
 @media screen and (max-width: 768px) 
 {
+  body{
+    padding: 30px 0 0 0 ;
+    
+  }
   
-
   nav {
     width: 100%;
     display: flex;
@@ -580,6 +583,15 @@ footer H3 {
     
     border-top: none;
   }
+  .hTitre{
+    margin-left: 25px;
+    padding-right: 60px;
+  }
+  .pTitre{
+    margin-left: 25px;
+  }
+
+
 
   form{
     justify-content: center;
@@ -597,6 +609,8 @@ footer H3 {
   #filtre {
     flex-direction: column;
     align-items: initial;
+    gap: 0;
+    margin-left: 20px;
   }
 
   .pFiltre {
@@ -609,6 +623,10 @@ footer H3 {
     margin-left: 0;
     font-size: 11px;
   }
+  .pInfo{
+    margin-left: 20px;
+    padding-right: 23px;
+  }
 
   .hebergements {
     flex-direction: column-reverse;
@@ -617,7 +635,11 @@ footer H3 {
   #hebergement{
     width: 100%;
     padding: 0;
+    background-color: #FFFFFF;
    
+  }
+  #hebergement h2{
+    margin-left: 20px;
   }
 
   .cardHebergement {
@@ -635,13 +657,20 @@ footer H3 {
   }
 
   .imgMarseille {
-    height: 70%;
+    height: 66%;
   }
 
   #populaire {
     width: 100%;
-    padding: 0;
+    padding: 0 0 40px 0;
+    border-radius: initial;
    
+  }
+  #populaire h2{
+    margin-left: 20px;
+  }
+  .fa-chart-line{
+    margin-right: 20px;
   }
 
   #populaire .containerPopulaire {
@@ -673,6 +702,7 @@ footer H3 {
   }
 
   footer {
+    width: 100%;
     flex-direction: column;
     padding: 0;
   }
