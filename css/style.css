@@ -565,7 +565,7 @@ footer H3 {
 
   nav li {
     width: 100%;
-    padding: 30px;
+    padding: 15px;
     border-bottom: 2px solid transparent;
   }
 
@@ -584,7 +584,7 @@ footer H3 {
   }
   
   .titlePrincipal{
-    padding: 0 60px 0 30px;
+    padding-left: 30px;
   }
 
   form{
@@ -614,7 +614,7 @@ footer H3 {
   }
 
   .filtreP {
-    width:37%;
+    width:36%;
     font-size: 11px;
   }
   
